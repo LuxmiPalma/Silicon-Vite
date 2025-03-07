@@ -5,6 +5,7 @@ import Hero from '../components/sections/Hero'
 import Faq from '../components/sections/FAQ'
 import Testimonials from '../components/sections/Testimonials'
 import Subscribe from '../components/sections/Subscribe'
+import AppFeatures from '../components/sections/AppFeatures'
 
 
 
@@ -16,6 +17,7 @@ const HomePage = () => {
     <>
      <Hero />
     <Brands />
+    <AppFeatures />
     <Testimonials />
     <Faq />
     <Subscribe />

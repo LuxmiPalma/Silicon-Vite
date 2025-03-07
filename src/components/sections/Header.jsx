@@ -21,8 +21,17 @@ const Header = () => {
         </nav>
         
         <ToggleSwitch id="theme-switch" text="Dark Mode" currentState={darkMode} currentStateCallback={toggleDarkMode} />
-        
+
+        <div className='btn-account'>       
         <LinkButton to="signin" text="sign in" color="purple" icon="bi bi-person" />
+       </div>
+
+       <div className="btn-menu">
+          <LinkButton to="#" text="" color="transparent" icon="bi bi-list" />
+        </div>
+
+        
+
 
       </div>
     </header>
