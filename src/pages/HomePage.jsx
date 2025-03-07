@@ -8,6 +8,7 @@ import Subscribe from '../components/sections/Subscribe'
 import AppFeatures from '../components/sections/AppFeatures'
 import HowDoesItWork from '../components/sections/HowDoesItWork'
 import MoneyTransfer from '../components/sections/MoneyTransfer'
+import ReceivePayment from '../components/sections/ReceivePayment'
 
 
 
@@ -22,6 +23,7 @@ const HomePage = () => {
     <AppFeatures />
     <HowDoesItWork />
     <MoneyTransfer />
+    <ReceivePayment />
     <Testimonials />
     <Faq />
     <Subscribe />
