@@ -6,6 +6,7 @@ import Faq from '../components/sections/FAQ'
 import Testimonials from '../components/sections/Testimonials'
 import Subscribe from '../components/sections/Subscribe'
 import AppFeatures from '../components/sections/AppFeatures'
+import HowDoesItWork from '../components/sections/HowDoesItWork'
 
 
 
@@ -18,6 +19,7 @@ const HomePage = () => {
      <Hero />
     <Brands />
     <AppFeatures />
+    <HowDoesItWork />
     <Testimonials />
     <Faq />
     <Subscribe />
