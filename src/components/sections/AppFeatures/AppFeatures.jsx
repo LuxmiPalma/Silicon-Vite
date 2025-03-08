@@ -1,4 +1,5 @@
 import React from 'react'
+import "./AppFeatures.css";
 
 const AppFeatures = () => {
     return (

@@ -1,0 +1,224 @@
+#app-features-section {
+    padding: 4rem 0;
+    margin-bottom: 5rem;
+}
+
+    
+    .app-features-grid {
+      display: grid;
+      grid-template-columns: 450px 1fr;
+      gap: 6rem; 
+      align-items: flex-start;
+      justify-content: space-between;
+      margin: 0;
+     }
+  
+    .phone-container {
+      position: relative;
+      width: 450px;
+    }
+      
+    .phone-card-overlay {
+        position: relative;
+        padding-top: 2rem; 
+    }
+        
+        .phone-image {
+          position: relative;
+          width: 65%;
+          height: auto;
+          display: block;  
+        }
+        
+        .card-image {
+          position: absolute;
+          width: 320px;
+          top: 17%;
+          right: 120px;
+          height: auto;
+        }
+      
+    
+  
+    .content-container {
+      padding-top: 2rem; 
+    }
+  
+    .section-title {
+      margin-bottom: 3rem;
+    }
+  
+      .section-title h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 1rem;
+        
+
+      }
+  
+      p {
+        color: var(--text-color);
+        font-size: 1.1rem;
+        line-height: 1.6;
+        opacity: 0.8;
+      }
+    
+  
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+      margin-top: 2rem;
+    }
+  
+    .feature {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+  
+      .feature-icon {
+        background-color: var(--section-background-color);
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+        
+      .feature-icon img {
+          width: 24px;
+          height: 24px;
+        }
+      
+  
+      .feature-body h3 {
+        
+        
+          margin: 0 0 0.5rem 0;
+          font-size: 1.1rem; 
+          font-weight: 800;
+          color: var(--dark-color);
+        }
+  
+        .feature-body p {
+          margin: 0;
+          font-size: 0.95rem;  
+          line-height: 1.6;
+          color: var(--text-color);
+          opacity: 0.8;
+        }
+        /* Tablet View: Center text & hide phone image */
+     @media (min-width: 768px) and (max-width: 1024px) {
+    .app-features-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .phone-container {
+        display: none; /* Hide the phone image */
+    }
+
+    .features-container {
+        width: 80%;
+        max-width: 900px;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+        gap: 2rem;
+    }
+
+    .feature {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 1rem;
+    }
+
+    .feature-icon {
+        background-color: var(--section-background-color);
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .feature-icon img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    .app-features-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .phone-container {
+        display: none;
+    }
+
+    .features-container {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 1rem;
+    }
+
+    .feature-icon {
+        background-color: var(--section-background-color);
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .feature-icon img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .feature-body {
+        flex: 1;
+    }
+
+    .feature-body h3 {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .feature-body p {
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+}
