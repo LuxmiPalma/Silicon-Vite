@@ -1,5 +1,8 @@
 import React from 'react'
-import SubscribeForm from '../forms/SubscribeForm'
+
+import SubscribeForm from '../../forms/SubscribeForm'
+import "./Subscribe.css";
+
 
 const Subscribe = () => {
 

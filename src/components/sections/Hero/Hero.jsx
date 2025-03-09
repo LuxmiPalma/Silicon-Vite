@@ -1,6 +1,9 @@
 import React from 'react'
-import LinkChevronButton from '../elements/LinkChevronButton'
-import LinkDownloadButton from '../elements/LinkDownloadButton'
+import "./Hero.css";
+import LinkChevronButton from '../../elements/LinkChevronButton';
+import LinkDownloadButton from '../../elements/LinkDownloadButton';
+
+
 
 const Hero = () => {
   return (

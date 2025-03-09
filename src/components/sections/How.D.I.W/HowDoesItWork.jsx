@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "./HowDoesItWork.css";
 
 const HowDoesItWork = () => {
     const [images, setImages] = useState([

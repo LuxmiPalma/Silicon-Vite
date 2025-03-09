@@ -1,0 +1,64 @@
+#subscribe {
+
+    padding: 0rem 0 0rem;
+
+    .container {
+        background-color: var(--section-background);
+        border-radius: 8px;
+        padding: 2rem 6rem;
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .headline {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+
+        h2 {
+            font-size: 24px;
+
+            span {
+                display: inline;
+            }
+        }
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .subscribe-to-newsletter {
+        form {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            i {
+                position: absolute;
+                left: 1rem;
+                top: 50%; /* Center vertically */
+                transform: translateY(-50%);
+                font-size: 1.2rem; /* Adjust icon size */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%
+            }
+
+            input {
+                border-radius: 8px 0 0 8px;
+                padding-left: 2.8rem;
+            }
+
+            button {
+                border-radius: 0 8px 8px 0;
+            }
+        }
+    }
+
+}

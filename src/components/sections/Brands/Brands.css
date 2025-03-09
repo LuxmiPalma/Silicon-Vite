@@ -1,0 +1,9 @@
+#brands {
+    padding: 5rem 0; 
+}
+/* Hide the entire brands section on mobile */
+@media (max-width: 767px) {
+    #brands {
+        display: none !important;
+    }
+}

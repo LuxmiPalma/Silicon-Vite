@@ -1,0 +1,20 @@
+#how-does-it-work {
+    padding: 5rem 0;
+    background-color: var(--section-background);
+
+    .section-title {
+        text-align: center;
+    }
+
+    .image-slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .section-body {
+        text-align: center;
+    }
+}

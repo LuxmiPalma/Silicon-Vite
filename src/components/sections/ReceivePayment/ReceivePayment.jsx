@@ -1,5 +1,6 @@
 import React from 'react'
-import LinkButton from '../elements/LinkButton'
+import LinkButton from '../../elements/LinkButton'
+import "./ReceivePayment.css";
 
 const ReceivePayment = () => {
   return (

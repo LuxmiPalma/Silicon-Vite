@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
-import { TestimonialsContext } from '../../contexts/TestimonalsContext'
-import Testimonial from '../elements/Testimonial'
+import { TestimonialsContext } from '../../../contexts/TestimonalsContext'
+import Testimonial from '../../elements/Testimonial'
+import "./Testimonials.css";
 
 const Testimonials = () => {
   const {testimonials} = useContext(TestimonialsContext)
