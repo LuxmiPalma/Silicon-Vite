@@ -16,5 +16,16 @@
 
     .section-body {
         text-align: center;
+        color: var(--dark-color);
+        
+    }
+    .section-body h3 {
+        font-size: 1.5rem;
+        font-weight: 720;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .image-slide img {
+        max-width: 350px; /* Slightly smaller images for tablet */
     }
 }
