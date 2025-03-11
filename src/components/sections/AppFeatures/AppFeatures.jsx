@@ -1,26 +1,41 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./AppFeatures.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const AppFeatures = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, 
+            once: false, 
+            mirror: true, 
+            delay: 100 
+           
+        });
+       
+
+    }, []);
+
     return (
       <section id="app-features-section">
         <div className="container">
           <div className="app-features-grid">
-             <div className="phone-container">
+
+             <div className="phone-container"data-aos="zoom-in">
                 <div className="phone-card-overlay">
-                    <img className="phone-image" src="images/app-screen.svg" alt="App Interface" />
-                    <img className="card-image" src="images/creditcard.svg" alt="Credit Card" />
+                    <img className="phone-image" src="images/app-screen.svg" alt="App Interface" data-aos="fade-up"/>
+                    <img className="card-image" src="images/creditcard.svg" alt="Credit Card"data-aos="flip-right" />
                 </div>
                 </div>
 
              <div className="features-container"> 
-                <div className="section-title">
+                <div className="section-title"data-aos="fade-up">
                    <h2>App Features</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est.</p>
                 </div>
 
                 <div className="features">
-                        <div className="feature">
+                        <div className="feature"data-aos="fade-right">
                             <div className="feature-icon">
                                 <img src="images/icons/payment-icon.svg" alt="Easy Payments" />
                             </div>
@@ -30,7 +45,7 @@ const AppFeatures = () => {
                             </div>
                         </div>
 
-                        <div className="feature">
+                        <div className="feature"data-aos="fade-left">
                             <div className="feature-icon">
                                 <img src="images/icons/shield-icon.svg" alt="Data Security" />
                             </div>
@@ -40,7 +55,7 @@ const AppFeatures = () => {
                             </div>
                         </div>
 
-                        <div className="feature">
+                        <div className="feature"data-aos="zoom-in">
                             <div className="feature-icon">
                                 <img src="images/icons/stats-icon.svg" alt="Cost Statistics" />
                             </div>
@@ -50,7 +65,7 @@ const AppFeatures = () => {
                             </div>
                         </div>
 
-                        <div className="feature">
+                        <div className="feature"data-aos="flip-up">
                             <div className="feature-icon">
                                 <img src="images/icons/support-icon.svg" alt="Support 24/7" />
                             </div>
@@ -60,7 +75,7 @@ const AppFeatures = () => {
                             </div>
                         </div>
 
-                        <div className="feature">
+                        <div className="feature"data-aos="fade-right">
                             <div className="feature-icon">
                                 <img src="images/icons/cashback-icon.svg" alt="Regular Cashback" />
                             </div>
@@ -70,7 +85,7 @@ const AppFeatures = () => {
                             </div>
                         </div>
 
-                        <div className="feature">
+                        <div className="feature" data-aos="flip-left">
                             <div className="feature-icon">
                               <img src="images/icons/standards-icon.svg" alt="Top Standards" />
                                 </div>

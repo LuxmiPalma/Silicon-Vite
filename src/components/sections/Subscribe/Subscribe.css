@@ -10,20 +10,24 @@
         grid-template-columns: 4fr 3fr;
         align-items: center;
         gap: 2rem;
+       
     }
 
     .headline {
         display: flex;
         align-items: center;
         gap: 2rem;
+   
 
 
         h2 {
             font-size: 24px;
+            
 
             span {
                 display: inline;
             }
+           
         }
 
         img {
@@ -43,7 +47,7 @@
                 left: 1rem;
                 top: 50%; /* Center vertically */
                 transform: translateY(-50%);
-                font-size: 1.2rem; /* Adjust icon size */
+                font-size: 1.2rem; 
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -51,6 +55,8 @@
             }
 
             input {
+                flex: 1; /* Allow input to expand */
+                min-width: 200px; /* Prevent it from shrinking too much */
                 border-radius: 8px 0 0 8px;
                 padding-left: 2.8rem;
             }
@@ -61,4 +67,92 @@
         }
     }
 
+@media (max-width: 768px) {
+    .container {
+        background-color: var(--section-background);
+        border-radius: 8px;
+        padding: 2rem 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    /* Headline Fix */
+    .headline {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        h2 {
+            font-size: 21px; /* Reduce font size for mobile */
+            margin: 0;
+           
+    
+            
+
+            span {
+                display: none;
+            }
+        }
+            img {
+                width: 70px; /* Adjust bell icon size */
+                height: auto;
+            }
+           
+        }
+    
+
+    
+
+
+    
+    /* Center Subscribe Form */
+    .subscribe-to-newsletter {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Move form slightly left */
+        margin-top: 1rem;
+    }
+
+    .subscribe-to-newsletter form {
+        display: flex;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Input Field */
+    .subscribe-to-newsletter input {
+        flex: 1;
+        border-radius: 8px 0 0 8px;
+        padding: 0.7rem;
+        font-size: 14px;
+    }
+
+    /* Subscribe Button */
+    .subscribe-to-newsletter button {
+        padding: 0.7rem;
+        font-size: 14px;
+        border-radius: 0 8px 8px 0;
+    }
 }
+ @media (max-width: 1024px){
+        /* Hide span text on tablet screens */
+        .headline h2 span {
+            display: none;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+        
+    
+    

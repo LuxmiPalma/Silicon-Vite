@@ -54,3 +54,11 @@
     }
 
 }
+ @media  (max-width: 1024px){
+    #receive-payment{
+       
+        display: none;
+
+    }
+}
+

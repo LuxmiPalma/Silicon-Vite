@@ -1,28 +1,40 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
 import LinkButton from '../../elements/LinkButton'
 import "./ReceivePayment.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ReceivePayment = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 1200, 
+          once: false, 
+          mirror: true, 
+          delay: 100 
+        });
+      }, []);
+
   return (
     <section id="receive-payment">
         <div class="container">
-            <div class="column left">
+            <div class="column left"data-aos="flip-right">
                 <img src="/images/receive-payment.svg" alt="payment" />
             </div>
-            <div class="column right">
+            <div class="column right"data-aos="flip-left">
                 <div class="content">
-                    <div class="section-title">
+                    <div class="section-title" data-aos="flip-up">
                         <h2>Receive payment from international bank details</h2>
                     </div>
                     <div class="section-body">
                         <div className="features">
-                            <div className="feature">
+                            <div className="feature"data-aos="flip-down">
                                 <div className="feature-icon">
                                     <img src="images/icons/credit-card.svg" alt="credit card" />
                                 </div>
                                 <p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
                             </div>
-                            <div className="feature">
+                            <div className="feature"data-aos="flip-up">
                                 <div className="feature-icon">
                                     <img src="images/icons/wallet.svg" alt="credit card" />
                                 </div>
@@ -30,7 +42,7 @@ const ReceivePayment = () => {
                             </div>
                         </div>
 
-                        <div className="learn-more-link">
+                        <div className="learn-more-link"data-aos="zoom-in">
                             <LinkButton to="/" color="purple" text="Learn more" icon="bi bi-arrow-right" iconAfter={true} />
                         </div>
                     </div>

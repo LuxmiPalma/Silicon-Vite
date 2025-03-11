@@ -50,5 +50,14 @@
             display: flex;
         }
     }
+    
 
 }
+@media  (max-width: 1024px){
+    #money-transfer {
+       
+        display: none;
+
+    }
+}
+

@@ -1,12 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import LinkButton from '../../elements/LinkButton'
 import "./MoneyTranfer.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
+
 
 const MoneyTransfer = () => {
+    useEffect (() => {
+        AOS.init({
+            duration: 1200, 
+            once: false, 
+            mirror: true, 
+            delay: 100
+        });
+    }, []);
     return (
         <section id="money-transfer">
             <div class="container">
-                <div class="column left">
+                <div class="column left"data-aos="fade-right">
                     <div class="content">
                         <div class="section-title">
                             <h2>Make your money transfer simple and clear</h2>
@@ -23,7 +34,7 @@ const MoneyTransfer = () => {
                         </div>
                     </div>
                 </div>
-                <div class="column right">
+                <div class="column right"data-aos="fade-left">
                     <img src="/images/transfer-statisitcs.svg" alt="statistics" />
                 </div>
             </div>
