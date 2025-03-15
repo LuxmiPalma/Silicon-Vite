@@ -26,8 +26,16 @@
 
     .headline {
         grid-area: headline;
+        width: 125%;
         text-align: center;
-        width: 100%;
+
+
+
+        @media (width < 768px){
+            max-width: 700px; 
+            padding-left: 4rem;
+            padding-right: 12rem;
+        }
        
 
         @media (width >= 768px) {
@@ -35,13 +43,23 @@
             font-size: 3rem; 
             margin: 0 auto;
             text-align: center;
-            padding-right: 20rem;
+            padding-block-end: 2rem;
+            padding-left: 10rem;
+            padding-right: 10rem;
+            
+            
+            
             
         }
 
         @media (width >= 1400px) {
+            padding-left: 0rem;
             text-align: left;
-            padding-right: 3rem;
+           
+
+
+
+            
         }
     }
 
@@ -62,6 +80,8 @@
         p {
             font-size: 18px;
             margin-bottom: 2rem;
+            width: 92%;
+            
         }
 
         .app-downloads {
@@ -71,10 +91,19 @@
             margin-bottom: 4rem;
 
             @media (width >= 768px) {
-                display: flex;  
+                display: grid;  
+                grid-template-columns:1fr 1fr;
                 font-size: 17px;
-            }
+                align-items: center;
+                width: 400px;
+                height: 44px;
 
+            }
+            
+
+        }
+        [data-theme="dark"] .btn-download img[src="/images/icons/app-store.svg"] {
+            filter: invert(1) brightness(2) !important; /* ✅ Changes only the Apple logo */
         }
 
         .btn-chevron {
@@ -99,5 +128,10 @@
             width: 100%;
             height: auto;
         }
+    }
+}
+@media (width >= 768px) {
+    [data-theme="dark"] #hero .content p {
+        opacity: 0.5;  /* Adjust this value as needed */
     }
 }

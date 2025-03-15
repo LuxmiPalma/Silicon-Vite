@@ -1,60 +1,76 @@
 #receive-payment {
-    padding: 0rem 0 5rem;
+    padding: 5rem 0;
+
 
     .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        gap: 8rem;
-        width: 1024px;
-
-        .column {
-            display: flex;  
-            align-items: center;
-            
-            &.left {
-                justify-content: flex-end;
-            }
-            &.right {
-                justify-content: flex-start;
-            }
-        }
-
-        
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    gap: 4rem; 
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
     }
 
-    .section-title {
-        h2 {
-            font-size: 32px;
-        }
+    .column {
+    display: flex;
+    align-items: center;
     }
 
-    .section-body {
-
-        ul {
-            padding: 0;
-            margin-bottom: 4rem;
-
-            li {
-                list-style: none;
-                display: flex;
-                align-items: center;
-                gap: 0.8rem;
-                margin-bottom: 1rem;
-
-                i {
-                    color: var(--li-icon);
-                }
-            }
-        }
-
-        .learn-more-link {
-            display: flex;
-        }
+    .column.left {
+    justify-content: flex-end;
     }
 
+    .column.right {
+    justify-content: flex-start;
+    }
+
+    .section-title h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    }
+
+    .features {
+    display: flex;
+    flex-direction: row; 
+    gap: 3rem; 
+    }
+
+    .feature {
+    display: flex;
+    flex-direction: column; 
+    text-align: left; 
+    max-width: 280px;
+    }
+
+    .feature-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px; 
+    margin-bottom: 0.8rem; 
+    }
+
+    .feature-icon img {
+    width: 24px;
+    height: 24px;
+    }
+
+    .feature p {
+    font-size: 16px;
+    line-height: 1.5;
+     margin: 0;
+    }
+
+    .learn-more-link {
+    display: flex;
+    margin-top: 1.5rem;
+    }
 }
- @media  (max-width: 1024px){
+@media  (max-width: 1024px){
     #receive-payment{
        
         display: none;

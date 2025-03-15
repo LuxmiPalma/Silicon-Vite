@@ -20,7 +20,7 @@ const Faq = () => {
         <div className="container"data-aos="zoom-in-up">
             
             <div className="headline">
-                <h2 data-aos="zoom-in" >Any questions? Check out the FAQs</h2>
+                <h2 data-aos="zoom-in" >Any questions?<br /> Check out the FAQs</h2>
                 <p data-aos="fade-up">Still have unanswered questions and need to get in touch?</p>
             </div>
 
@@ -38,6 +38,11 @@ const Faq = () => {
          <div data-aos="fade-up">
               <Accordion />
           </div>
+
+          <div className="mobile-contact">
+          <a href="/contact" className="btn-contact">Contact us now</a>
+        </div>
+          
 
 </div>
 </section>

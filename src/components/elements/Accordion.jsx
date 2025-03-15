@@ -1,21 +1,27 @@
-import React, { useContext } from 'react'
-import AccordionItem from './AccordionItem'
-import { FaqContext } from '../../contexts/FaqContext'
+import React, { useContext, useState } from "react";
+import AccordionItem from "./AccordionItem";
+import { FaqContext } from "../../contexts/FaqContext";
 
 const Accordion = () => {
-  const { faqs } = useContext(FaqContext)
+    const { faqs } = useContext(FaqContext);
+    const [activeIndex, setActiveIndex] = useState(null);
+
+    const toggleAccordion = (index) => {
+        setActiveIndex(activeIndex === index ? null : index); // Toggle logic
+    };
 
     return (
-      <div class="accordion" id="faq-accordion">
-        {
-            faqs.map(faq => (<AccordionItem key={faq.id} parent="faq-accordion" item={faq} /> ))
-        }
+        <div className="accordion">
+            {faqs.map((faq, index) => (
+                <AccordionItem
+                    key={faq.id}
+                    item={faq}
+                    isActive={activeIndex === index}
+                    onClick={() => toggleAccordion(index)}
+                />
+            ))}
+        </div>
+    );
+};
 
-      </div>
-       
-
-        
-    )
-}
-
-export default Accordion
+export default Accordion;

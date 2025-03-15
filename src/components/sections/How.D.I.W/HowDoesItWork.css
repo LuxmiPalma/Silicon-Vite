@@ -4,6 +4,11 @@
 
     .section-title {
         text-align: center;
+        
+    }
+    .section-title h2{
+        color: var(--text-headline) !important;
+        
     }
 
     .image-slider {
@@ -22,6 +27,13 @@
     .section-body h3 {
         font-size: 1.5rem;
         font-weight: 720;
+        color: var(--text-headline);
+    }
+    .section-body p{
+        color: var(--text-headline);
+        max-width: 700px; /* adjust this width as needed */
+        margin: 0 auto;   /* centers text horizontally */
+        opacity: .7;
     }
    
 }
@@ -30,22 +42,70 @@
         
 @media (min-width: 768px) and (max-width: 1024px) {
     .image-slide img {
-        max-width: 350px; /* Slightly smaller images for tablet */
+        max-width: 350px; 
     }
     .image-slider .image-slide:nth-child(2) img {
         max-width: 204px;
-        max-height: 410px;  /* Increase size of middle image */
+        max-height: 410px; 
        
+    }
+    .section-body {
+        max-width: 70%; 
+        margin: 0 auto; 
+    }
+    .section-body p {
+        line-height: 1.4; 
+        max-width: 100%; 
+        margin: 0 auto; 
+        color:var(--text-p) !important
+
+    }
+    .section-body h3 {
+        color: var(--text-headline) !important;   
+    }
+    .section-title h2 {
+        text-align: center; 
+        color: var(--text-headline) !important;
+        
     }
 }
 
-@media (width >= 768px) {
+@media (max-width: 767px) {
     .image-slider {
-        justify-content: center;
-        flex-wrap: nowrap;
+        flex-direction: column; 
+        align-items: center;
+        gap: 2rem;
     }
 
     .image-slide img {
-        max-width: 250px; /* Smaller image for mobile */
+        width: auto;
     }
+
+    .section-body {
+        line-height: 1.4; 
+        max-width: 100%; 
+        margin: 0 auto; 
+    }
+    .section-body h3 {
+        width: 65%;
+        margin: 0 auto; 
+        font-size: 21px !important;
+        color: var(--text-headline) !important;
+
+    }
+    .section-body p{
+        margin: 0 auto;
+        width: 90%;
+        font-size: 16px;
+        color:var(--text-p) !important
+    }
+    .section-title h2 {
+        font-size: 27px !important; /*  Ensures it overrides any other rules */
+        text-align: center; 
+        color: var(--text-headline) !important;
+        
+    }
+   
+
+    
 }

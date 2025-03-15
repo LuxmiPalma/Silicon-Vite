@@ -44,3 +44,67 @@
         grid-area: accordion;
     }
 }
+   
+
+
+
+/* Mobile Contact Button */
+.mobile-contact {
+    display: none; /* Hide by default */
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-contact {
+    display: inline-block;
+    background-color: #6366F1; /* Adjust color */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Large Screens */
+@media (min-width: 1400px) {
+    .container {
+        grid-template-columns: 2fr 3fr;
+        grid-template-areas:
+            "headline accordion"
+            "contactoptions accordion";
+    }
+}
+
+    .mobile-contact {
+        display: none; /* Hide by default */
+        text-align: center;
+        margin-top: 2rem; /* Adds spacing */
+    }
+    @media (max-width: 767px) {
+        .mobile-contact {
+            display: block; /* Button appears only on mobile */
+        }
+    }
+
+    .btn-contact {
+        display: inline-block;
+        background-color: var(--button-purple-background); /* Uses your theme color */
+        color: var(--button-purple-text);
+        padding: 12px 24px;
+        border-radius: 12px; /* Smooth rounded corners */
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    }    
+}
+    
+
+
+
+

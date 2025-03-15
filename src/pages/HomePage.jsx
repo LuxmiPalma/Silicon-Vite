@@ -20,14 +20,14 @@ const HomePage = () => {
   return (
     <>
      <Hero />
-    <Brands />
-    <AppFeatures />
-    <HowDoesItWork />
-    <MoneyTransfer />
-    <ReceivePayment />
-    <Testimonials />
-    <Faq />
-    <Subscribe />
+     <Brands />
+     <AppFeatures />
+     <HowDoesItWork />
+     <MoneyTransfer />
+     <ReceivePayment />
+     <Testimonials />
+     <Faq />
+     <Subscribe />
     
    
    

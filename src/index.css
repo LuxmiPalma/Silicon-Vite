@@ -16,11 +16,15 @@
     --gray-700-color: rgba(255, 255, 255, 0.4); 
     --dark-color: #0B0F19;
     --white-color: #ffffff;
+    --gray-800-color:#585C7B;
+    --gray-dark-color:#131022;
+    --gray-dark2-color:#33354D;
 
     --text: var(--gray-400-color);
     --text-muted: var(--gray-300-color);
     --text-headline: var(--dark-color);
     --text-link: var(--purple-100-color);
+    --text-p: var(--gray-800-color);
 
     --border: var(--gray-200-color);
 
@@ -75,8 +79,10 @@
     --text-muted: var(--gray-300-color);
     --text-headline: var(--white-color);
     --text-link: var(--purple-100-color);
+    --text-app:var(--gray-dark2-color);
 
     --border: var(--gray-500-color);
+    --brand-background:var(--gray-dark-color);
 
     --background: var(--dark-color);
     --section-background: var(--gray-600-color);
@@ -179,6 +185,7 @@ h2 {
     color: var(--text-headline);
 }
 
+
 /* links */
 a {
     color: var(--text-link);
@@ -273,6 +280,7 @@ a {
         background-color: var(--button-download-background-hover);
         border-color: var(--button-download-border-hover);
         color: var(--button-download-text-hover);
+
     }
 }
 
@@ -412,18 +420,28 @@ form {
 }
 
 .contact-option {
+  
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 1.5rem;
-    display: grid;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column; /* ✅ Change to row so the icon and text are aligned properly */
+    align-items: start;
+    text-align: left;
+    width: 100%; /* ✅ Ensures equal width */
+    height: 100%; /* ✅ Ensures equal height */
+    flex: 1;
+    gap: 1rem; /* ✅ Adds space between the icon and text */
 
     i {
         font-size: 1.5em;
+        
     }
 
     p {
         margin: 0;
+
+
     }
 
     a {
@@ -495,6 +513,7 @@ form {
         }
     }
 }
+
 
 
 

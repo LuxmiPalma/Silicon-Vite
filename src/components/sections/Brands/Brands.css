@@ -1,9 +1,30 @@
 #brands {
     padding: 5rem 0; 
 }
-/* Hide the entire brands section on mobile */
+
+
 @media (max-width: 767px) {
     #brands {
         display: none !important;
     }
 }
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .imageslider {
+        display: grid !important; /*  Forces grid layout */
+        grid-template-columns: repeat(4, 1fr) !important; /* ✅ Ensures 4 columns */
+        justify-content: center !important;
+        gap: 1rem !important; /* Adjust spacing */
+        width: 100% !important;
+        height: 98px;
+    }
+
+    .imageslider-item {
+        padding: 1.5rem !important; /* Adjust padding for better spacing */ 
+    }
+    [data-theme="dark"] .imageslider-item {
+        background-color: var(--gray-dark-color) !important;
+    }
+}
+
