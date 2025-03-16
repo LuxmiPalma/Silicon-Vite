@@ -20,35 +20,24 @@ const Faq = () => {
         <div className="container"data-aos="zoom-in-up">
             
             <div className="headline">
-                <h2 data-aos="zoom-in" >Any questions?<br /> Check out the FAQs</h2>
+                <h2 data-aos="zoom-in">Any questions?<br /> Check out the FAQs</h2>
                 <p data-aos="fade-up">Still have unanswered questions and need to get in touch?</p>
             </div>
 
-            <div className="contact-options">
-
-              <div data-aos="flip-left">               
-                 <ContactOption icon="fa-solid fa-phone" text="Still have questions?" uri="/contact" linkText="Contact us" color="purple" />  
-              </div>
-
-              <div data-aos="flip-right" >
+            <div className="contact-options"data-aos="flip-left">
+                <ContactOption icon="fa-solid fa-phone" text="Still have questions?" uri="/contact" linkText="Contact us" color="purple" />
                 <ContactOption icon="bi bi-chat-dots-fill" text="Don't like phone calls?" uri="/contact" linkText="Contact us" color="green" />
-              </div>
             </div>
 
-         <div data-aos="fade-up">
-              <Accordion />
-          </div>
+            <Accordion />
 
-          <div className="mobile-contact">
+        </div>
+
+        <div className="mobile-contact"data-aos="flip-right">
           <a href="/contact" className="btn-contact">Contact us now</a>
         </div>
-          
-
-</div>
-</section>
-);
+    </section>
+  )
 }
 
-export default Faq;
-
-            
+export default Faq

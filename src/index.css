@@ -424,14 +424,8 @@ form {
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 1.5rem;
-    display: flex;
-    flex-direction: column; /* ✅ Change to row so the icon and text are aligned properly */
-    align-items: start;
-    text-align: left;
-    width: 100%; /* ✅ Ensures equal width */
-    height: 100%; /* ✅ Ensures equal height */
-    flex: 1;
-    gap: 1rem; /* ✅ Adds space between the icon and text */
+    display: grid;
+    gap: 1rem;
 
     i {
         font-size: 1.5em;

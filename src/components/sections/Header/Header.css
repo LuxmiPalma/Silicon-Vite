@@ -58,6 +58,20 @@
         .btn-menu {
             display: block; /* Show menu icon */
         }
+        @media (max-width: 768px) {  
+            .btn-toggle-switch label:first-of-type {
+                display: none !important; /* Completely hides the "Dark Mode" text */
+            }
+        }
+
+        .dark-mode {
+            display: flex;
+            align-items: center;
+            margin-left: auto; /* Push it to the right */
+            padding-left: 20px;
+        }
+        
+       
     }
     
    

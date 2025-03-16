@@ -30,10 +30,10 @@ const Header = () => {
 
         <nav>
           <NavLink to="/features" className="nav-link"data-aos="fade-right">Features</NavLink>
-          <NavLink to="/contacts" className="nav-link" data-aos="fade-left">Contacts</NavLink>
+          <NavLink to="/contact" className="nav-link" data-aos="fade-left">Contact</NavLink>
         </nav>
 
-        <div data-aos="flip-up">
+        <div className='dark-mode' data-aos="flip-up">
         <ToggleSwitch id="theme-switch" text="Dark Mode" currentState={darkMode} currentStateCallback={toggleDarkMode} />
         </div>
 
