@@ -67,22 +67,22 @@ const HowDoesItWork = () => {
 
   return (
     <section id="how-does-it-work">
-            <div class="container">
-                <div class="section-title" data-aos="fade-up">
+            <div className="container">
+                <div className="section-title" data-aos="fade-up">
                     <h2>How Does It Work?</h2>
                 </div>
                 
-                <div class="image-slider">
+                <div className="image-slider">
                     {
                         images.map(image => (
-                            <div key={image.id} class="image-slide"data-aos="fade-up">
+                            <div key={image.id} className="image-slide"data-aos="fade-up">
                                 <img src={image.src} alt={image.alt} />
                             </div>
                         ))
                     }
                 </div>
 
-                <div class="section-body"data-aos="fade-up">
+                <div className="section-body"data-aos="fade-up">
                     <h3>{sectionContent.heading}</h3>
                     <p>{sectionContent.text}</p>
                 </div>
